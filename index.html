@@ -1,12 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oi Oi</title>
-</head>
-<body>
-    <p>E</p>
-</body>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logoipsum</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hamburger.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <script src="./hamburger.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__horni">
+        <div class="kontakt">
+          <a href="tel://+420777666666" class="telefon">
+            <img src="./ikony/phone-icon.svg" alt="telefon" />
+            <p>+420 777 666 666</p>
+          </a>
+          <a href="mailto://obchod@l3web.cz" class="posta">
+            <img src="./ikony/mail-icon.svg" alt="schránka" />
+            <p>obchod@l3web.cz</p>
+          </a>
+        </div>
+        <a href="#" class="kontakt__item">
+          <img src="./ikony/profile-icon.svg" alt="profil" />
+          <p class="icon-profile">Přihlášení</p>
+        </a>
+      </div>
+      <div class="header__nav">
+        <div class="hamburger-cont">
+          <div class="navbar-horni">
+            <a href="./index.html" class="navbar__item image navbar-logo"
+              ><img src="./img/logo-orig.svg" alt="Logo Ipsum"
+            /></a>
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="hamburger hamburger-btn hamburger-zone"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <nav class="navbar-spodni hamburger-nav hamburger-zone">
+          <menu class="nav__cont">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Úvod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./funkce.html">Funkce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Podpora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ceník</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-line"></li>
+            <li class="nav-item btn-cta">
+              <a href="#">Zkušební verze</a>
+            </li>
+          </menu>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-uvod">
+        <div class="uvod-cont">
+          <h1 class="uvod-cont__nadpis">
+            <span class="text--oranzova">Řízení školy</span> ještě nebylo
+            jednodušší
+          </h1>
+          <div class="uvod-cont__item">
+            <p>
+              Představujeme Software pro
+              <span class="thick">řízení lidských zdrojů ve škole nebylo efektivnější</span>
+            </p>
+            <div class="checkmark-cont">
+              <div class="checkmark">
+                <img src="./ikony/check-icon.svg" alt="checkmark" />
+                <ul>
+                  <li>Počítá mzdové náklady</li>
+                </ul>
+              </div>
+              <div class="checkmark">
+                <img src="./ikony/check-icon.svg" alt="checkmark" />
+                <ul>
+                  <li>Generuje lidi</li>
+                </ul>
+              </div>
+              <div class="checkmark">
+                <img src="./ikony/check-icon.svg" alt="checkmark" />
+                <ul>
+                  <li>Tvoří budoucnost</li>
+                </ul>
+              </div>
+            </div>
+            <p class="uvod-cont__cta">
+              <a class="button" href="#">Vyzkoušejte demo</a>
+            </p>
+          </div>
+        </div>
+        <img class="img" src="./img/books.avif" alt="Knihy" />
+      </section>
+      <section class="section-loga">
+        <img src="./img/logo-spon2.svg" alt="Logo1" />
+        <img src="./img/logo-spon5.svg" alt="Logo2" />
+        <img src="./img/logo-spon4.svg" alt="Logo3" />
+        <img src="./img/logo-spon1.svg" alt="Logo4" />
+        <img src="./img/logo-spon3.svg" alt="Logo5" />
+      </section>
+      <section class="section-vyhody">
+        <h2>Výhody řešení</h2>
+        <div class="vyhody-cont">
+          <div class="vyhody-cont__item">
+            <img src="./img/clock-blue.svg" alt="Grafika s ikonou" />
+            <p>
+              <span class="text--oranzova">Zkracuje čas práce</span> díky
+              velkému množství funkcí.
+            </p>
+          </div>
+          <div class="vyhody-cont__item">
+            <img src="./img/people-blue.svg" alt="Grafika s ikonou" />
+            <p>Poskytuje selektivní přístup všem pracovníkům</p>
+          </div>
+          <div class="vyhody-cont__item">
+            <img src="./img/exchange-blue.svg" alt="Grafika s ikonou" />
+            <p>Umožňuje outsourcing personalistických procesů</p>
+          </div>
+          <div class="vyhody-cont__item">
+            <img src="./img/document-blue.svg" alt="Grafika s ikonou" />
+            <p>Zaručuje splnění požadavků ISO a IATF</p>
+          </div>
+        </div>
+        <div class="vyhody-karty">
+          <article class="vyhody-karty__item">
+            <h3>Administrace aplikace</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Mauris metus. Fusce aliquam vestibulum ipsum.
+            </p>
+          </article>
+          <article class="vyhody-karty__item">
+            <h3>Tvorba organizační struktury</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Mauris metus. Fusce aliquam vestibulum ipsum.
+            </p>
+          </article>
+          <article class="vyhody-karty__item">
+            <h3>Popisy pracovních míst</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Mauris metus. Fusce aliquam vestibulum ipsum.
+            </p>
+          </article>
+          <article class="vyhody-karty__item">
+            <h3>Firemní procesy</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Mauris metus. Fusce aliquam vestibulum ipsum.
+            </p>
+          </article>
+        </div>
+        <p class="section-vyhody-cta">
+          <a class="button" href="#">Prozkoumat všechny funkce</a>
+        </p>
+      </section>
+      <section class="section-pribeh">
+        <div class="pribeh-cont">
+          <div class="pribeh-cont__item">
+            <h2>Příběh</h2>
+            <h3>Jsme dva - Honza a Tomáš</h3>
+            <p>
+                Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Praesent id justo in neque elementum ultrices. Fusce consectetuer risus a nunc. Vestibulum fermentum tortor id mi. Vivamus luctus egestas leo. Fusce tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Aliquam erat volutpat. Pellentesque ipsum...
+            </p>
+            <p class="pribeh-cont-cta">
+              <a class="button" href="#">Přečíst celý příběh</a>
+            </p>
+          </div>
+          <div class="pribeh-cont-img">
+            <img class="img" src="./img/2people.jpg" alt="Vývojáři" />
+          </div>
+        </div>
+      </section>
+      <section class="section-profily">
+        <h2>Napsali o nás</h2>
+        <div class="profily-cont">
+          <div class="profily-cont__item">
+            <img src="./img/profile-1.svg" alt="Profilová grafika" />
+            <div class="item__text">
+              <p>
+                Nam quis nulla. Integer lacinia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+              <h3>Michaela Komorousová</h3>
+              <p>Personalista, Magna Exteriors s.r.o.</p>
+            </div>
+          </div>
+          <div class="profily-cont__item">
+            <img src="./img/profile-2.svg" alt="Profilová grafika" />
+            <div class="item__text">
+              <p>
+                Nam quis nulla. Integer lacinia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+              <h3>Alžběta Formánková</h3>
+              <p>Personalista, Magna Exteriors s.r.o.</p>
+            </div>
+          </div>
+          <div class="profily-cont__item">
+            <img src="./img/profile-3.svg" alt="Profilová grafika" />
+            <div class="item__text">
+              <p>
+                Nam quis nulla. Integer lacinia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+              <h3>Michaela Komorousová</h3>
+              <p>Personalista, Magna Exteriors s.r.o.</p>
+            </div>
+          </div>
+        </div>
+        <p class="section-profily-cta">
+          <a class="button" href="#">Chci si přečíst víc</a>
+        </p>
+      </section>
+      <section class="section-aktuality">
+        <h2>Aktuality</h2>
+        <div class="aktuality-cont">
+          <div class="aktuality-cont__item">
+            <p class="aktuality-nadpis">Přidán nový modul do administrace</p>
+            <p>
+                Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Donec quis nibh at felis congue commodo...
+            </p>
+            <a class="text--oranzova" href="#">Přečíst celý článek</a>
+          </div>
+          <div class="aktuality-cont__item">
+            <p class="aktuality-nadpis">Sleva na 3 pozice 20%</p>
+            <p>
+              V roce 2022 jsme si pro vás připravili slevu 20% pro nové 3 pozice
+              v naší aplikaci...
+            </p>
+            <a class="text--oranzova" href="#">Přečíst celý článek</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__div">
+        <div class="footer__item">
+          <a href="./index.html" class="navbar__item image footer__logo"
+            ><img src="./img/logo-lightblue.svg" alt="Logo Ipsum"
+          /></a>
+          <a href="#" class="footer__item--thick">Pslib.cz s.r.o</a>
+          <p>Masarykova 12345</p>
+          <p>460 00 Liberec</p>
+          <div class="footer__kontakty">
+            <a href="tel://+420777666666" class="footer__link">
+              <img src="./ikony/phone-icon.svg" alt="telefon" /> +420 777 666
+              666</a
+            >
+            <a href="mailto://info@l3web.cz" class="footer__link">
+              <img src="./ikony/mail-icon.svg" alt="posta" /> info@l3web.cz</a
+            >
+          </div>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__h3">Videotutoriály</h3>
+          <a href="#" class="footer__link">CSS</a>
+          <a href="#" class="footer__link">Animace</a>
+          <a href="#" class="footer__link">Stříhání videa</a>
+          <a href="#" class="footer__link">Výběr barev</a>
+          <a href="#" class="footer__link">Plánování pracovníků a mezd</a>
+          <a href="#" class="footer__link">Všechna videa</a>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__h3">Podpora</h3>
+          <a href="#" class="footer__link">Přihlášení k účtu</a>
+          <a href="#" class="footer__link">Školení</a>
+          <a href="#" class="footer__link">FAQ - časté dotazy</a>
+          <a href="#" class="footer__link">Kontakty</a>
+          <a href="#" class="footer__link">Videotutoriály</a>
+        </div>
+        <div class="footer__item--list">
+          <h3 class="footer__h3">Menu</h3>
+          <a class="footer__list--text" href="./index.html">Úvod</a>
+          <a class="footer__list--text" href="./funkce.html">Funkce</a>
+          <a class="footer__list--text" href="#">Podpora</a>
+          <a class="footer__list--text" href="#">Ceník</a>
+          <a class="footer__list--text" href="./kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <div class="underfooter">
+        <span class="underfooter__item"></span>
+      </div>
+      <div class="footer__item--line">
+        <div class="footer__line--text">
+          <a href="#" class="footer__link"
+            >&copy; Copyright 2023 - Pslib.cz s.r.o</a
+          >
+          <span class="footer__line--utext"></span>
+          <a href="#" class="footer__link">Cookies</a>
+          <span class="footer__line--utext"></span>
+          <a href="#" class="footer__link">Podmínky užití</a>
+        </div>
+        <a href="#" class="footer__link">Vyrobilo: B interactive</a>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,48 @@
+:root {
+  --oranzova: #f18424;
+  --bila: #ffffff;
+  --cerna: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+
+  .hamburger-nav {
+    transform: none;
+    border: none;
+    background-color: var(--bila);
+  }
+
+  .btn-cta {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--oranzova);
+    border-radius: 0.5em;
+  }
+
+  .btn-cta:hover {
+    font-weight: bold;
+    padding: 5px 15px;
+    color: var(--cerna);
+    background-color: var(--bila);
+    border: 2.5px solid var(--oranzova);
+  }
+
+  .btn-cta > a {
+    color: var(--bila);
+  }
+
+  .hamburger-nav a:hover {
+    color: var(--cerna);
+  }
+
+  .hamburger-cont {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+    color: var(--cerna);
+  }
+}

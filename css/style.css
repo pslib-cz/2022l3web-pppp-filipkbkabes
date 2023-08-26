@@ -1,0 +1,837 @@
+:root {
+  --oranzova: #f18424;
+  --modra: #97cfe9;
+  --tmavemodra: #101d3d;
+  --seda: #d4d4d4;
+  --bila: #ffffff;
+  --cerna: #000000;
+  --svetleseda: #f3f3f3;
+  --svetlemodra: #f1f8fc;
+  --svetlesvetlemodra: #e9f2f8;
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.header__horni {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: var(--svetleseda);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--tmavemodra);
+}
+
+h2 {
+  text-align: center;
+}
+
+.thick {
+  font-weight: bold;
+}
+
+.telefon,
+.posta {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--cerna);
+}
+
+.kontakt,
+.kontakt__item {
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+.img {
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  padding: 0;
+  margin: 0;
+  border-radius: 25px;
+}
+
+.button {
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1em;
+  color: var(--bila);
+  background-color: var(--oranzova);
+}
+
+.button:hover {
+  padding: 0.8em;
+  border-radius: 1em;
+  color: var(--oranzova);
+  border: var(--oranzova) 6px solid;
+  background-color: var(--bila);
+}
+
+.button--funkce {
+  margin: 0;
+}
+
+.tecka {
+  font-size: small;
+  padding-left: 30px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-image: radial-gradient(
+    ellipse at center,
+    var(--oranzova) 50%,
+    transparent 0%
+  );
+}
+
+.homepage a {
+  font-size: small;
+  padding-right: 20px;
+  color: var(--cerna);
+}
+
+.homepage::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  font-size: small;
+  right: 1em;
+  width: 16px;
+  height: 16px;
+  background: url("../ikony/home-icon.svg") no-repeat center center;
+}
+
+.section-profily-cta,
+.section-vyhody-cta,
+.pribeh-cont-cta > a {
+  color: var(--bila);
+}
+
+.text--oranzova {
+  font-weight: 600;
+  color: var(--oranzova);
+}
+
+.kontakt {
+  gap: 20px;
+}
+
+.kontakt img {
+  width: 100%;
+}
+
+.header__horni p {
+  display: none;
+}
+
+.navbar__item {
+  max-width: 190px;
+}
+
+.navbar__logo {
+  padding-top: 0.25em;
+}
+
+.nav-link {
+  text-align: center;
+  font-size: 24px;
+  color: var(--cerna);
+}
+
+.kontakt__item {
+  gap: 5px;
+  color: var(--cerna);
+}
+
+.navbar-spodni {
+  position: absolute;
+  width: 100%;
+  transition: 1s;
+}
+
+.nav-item {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0.5em 0;
+  border-bottom: var(--tmavemodra) 3px solid;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger-nav {
+  border-top: var(--tmavemodra) 2px solid;
+  background-color: var(--seda);
+}
+
+.hamburger-nav a:hover {
+  color: var(--bila);
+}
+
+.hamburger-cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1em;
+  color: var(--cerna);
+}
+.hamburger-nav menu {
+  padding: 0;
+  margin: 0;
+}
+
+.btn-cta {
+  display: inline-block;
+  border-top: 0;
+  font-size: 22px;
+}
+
+.btn-cta > a {
+  color: var(--tmavemodra);
+}
+
+.section-uvod img {
+  margin: 1em;
+}
+
+.uvod-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+}
+
+.uvod-cont p:first-of-type {
+  font-size: 1.5em;
+}
+
+.checkmark-cont ul {
+  padding: 0.8em 0em;
+  margin: 0;
+}
+
+.checkmark {
+  display: flex;
+  gap: 5px;
+}
+
+.uvod-cont__nadpis {
+  text-align: start;
+  font-size: 3em;
+}
+
+.uvod-cont__cta {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.uvod-cont__cta a {
+  width: 45%;
+}
+
+.section-loga {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3em 0;
+}
+
+.section-loga img {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.section-vyhody {
+  padding: 1em 3em;
+  background-color: var(--svetlemodra);
+}
+
+.vyhody-cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.vyhody-karty__item {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px var(--svetlesvetlemodra);
+  border: var(--svetlemodra) 5px solid;
+  background-color: var(--svetlesvetlemodra);
+}
+
+.vyhody-cont__item {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vyhody-cont__item p {
+  font-weight: 600;
+}
+
+.section-vyhody-cta {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.pribeh-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.pribeh-cont__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.pribeh-cont-img {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.pribeh-cont__item h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.pribeh-cont__item p {
+  margin: 1em;
+}
+
+.pribeh-cont-cta {
+  text-align: center;
+}
+
+.section-profily {
+  padding: 3em 3em;
+  border-top: var(--seda) 1px solid;
+}
+
+.profily-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.profily-cont__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.profily-cont__item img {
+  align-self: center;
+  justify-self: center;
+}
+
+.profily-cont__item p {
+  width: 70%;
+  margin-left: 2em;
+}
+
+.section-profily .item__text h3 {
+  margin: 0 0 0 2em;
+}
+
+.profily-cont__item p:last-of-type {
+  font-style: italic;
+}
+
+.section-profily-cta {
+  display: none;
+}
+
+.section-aktuality {
+  display: none;
+}
+
+.section-aktuality {
+  display: block;
+  padding: 1em 8em;
+  padding-bottom: 4em;
+  background-color: var(--svetleseda);
+}
+
+.aktuality-cont__item::before {
+  content: url(../img/kalendar21.svg);
+}
+
+.aktuality-cont__item:nth-of-type(2)::before {
+  content: url(../img/kalendar8.svg);
+}
+
+.section-nav h2 {
+  text-align: start;
+  margin-left: 1em;
+}
+
+.section-nav__item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 1rem;
+}
+
+.section-nav__item div {
+  padding-right: 1em;
+}
+
+.dnav {
+  display: flex;
+  align-items: baseline;
+}
+
+.section-karty {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 1em;
+  gap: 1em;
+}
+
+.section-karty__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3em 2em;
+  gap: 1em;
+  box-shadow: 0px 0px 30px;
+  background: var(--bila);
+  border-radius: 0.5em;
+}
+
+.section-karty__item > h4 {
+  color: var(--oranzova);
+}
+
+.section-karty__item:hover > h4 {
+  color: var(--cerna);
+}
+
+.section-karty__item:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -1em;
+  left: 2em;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/arrowbutton-orange.svg");
+  background-size: 2em;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.playbutton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+}
+
+.playbutton p {
+  text-align: center;
+}
+
+.playbutton:hover > p {
+  color: var(--oranzova);
+}
+
+.playbutton__item {
+  position: relative;
+  padding: 3em;
+  background-image: url(../img/playbutton-orange.svg);
+  background-size: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-dotazy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 1em;
+  gap: 1em;
+}
+
+.section-kontakt__item {
+  padding: 1em;
+  margin: 2em 4em;
+  background-color: var(--svetlesvetlemodra);
+  border-radius: 1em;
+}
+
+.section-kontakt-mapa {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.footer {
+  padding: 1em 0 1em 0;
+  color: var(--modra);
+  background-color: var(--tmavemodra);
+}
+
+.footer__div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer__item {
+  text-align: center;
+  padding: 1.5em;
+}
+
+.footer__logo {
+  margin-bottom: 0.5em;
+}
+
+.footer__link {
+  display: block;
+  margin: 1em 0;
+  color: var(--modra);
+}
+
+.footer__item--thick {
+  display: block;
+  font-weight: bold;
+}
+
+.footer__item a {
+  color: var(--modra);
+}
+
+.footer__h3 {
+  color: var(--modra);
+}
+
+.underfooter {
+  margin: 2em;
+}
+
+.underfooter__item {
+  display: flex;
+  border: var(--modra) 1px solid;
+}
+
+.footer__kontakt {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__kontakt a {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5em 0;
+  gap: 10px;
+}
+
+.footer__item--list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer__list--text {
+  margin: 0.5em 0;
+  color: var(--modra);
+}
+
+.footer__item--line {
+  text-align: center;
+}
+
+.footer__line--text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.footer__line--utext {
+  display: flex;
+  align-self: center;
+  height: 20px;
+  margin: 1em;
+  border: var(--modra) 0.5px solid;
+}
+
+@media screen and (min-width: 768px) {
+  .header__horni p {
+    display: inline;
+    margin: 0;
+  }
+
+  .kontakt p {
+    min-width: 150px;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 1em;
+  }
+
+  .navbar-spodni {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    max-width: 700px;
+    transition: none;
+    right: 0;
+  }
+
+  .nav__cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-line {
+    align-self: center;
+    height: 30px;
+    border: var(--svetleseda) 2px solid;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 0.5em;
+    border: none;
+  }
+
+  .nav-item:hover {
+    border-bottom: var(--oranzova) 2px solid;
+  }
+
+  .section-uvod {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .uvod-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 2em;
+  }
+
+  .uvod-list {
+    display: block;
+    padding-left: 17px;
+  }
+
+  .uvod-list li {
+    padding-left: 10px;
+  }
+
+  .uvod-cont__cta {
+    text-align: left;
+  }
+
+  .uvod-cont__cta a {
+    width: auto;
+  }
+
+  .section-loga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 8em;
+    gap: 3em;
+  }
+
+  .section-vyhody {
+    padding: 3em 8em;
+  }
+
+  .vyhody-cont {
+    flex-direction: row;
+    padding: 5em 0;
+  }
+
+  .vyhody-cont__item {
+    gap: 3em;
+  }
+
+  .vyhody-cont__item p {
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .vyhody-karty {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .vyhody-karty__item {
+    max-width: 250px;
+    padding: 0.8em;
+  }
+
+  .pribeh-cont {
+    flex-direction: row;
+    gap: 6em;
+  }
+
+  .section-pribeh h3 {
+    font-size: 1.5em;
+  }
+
+  .pribeh-cont__item p {
+    max-width: 450px;
+    padding: 1em;
+  }
+
+  .section-profily {
+    padding: 3em 8em;
+  }
+
+  .profily-cont {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .profily-cont__item {
+    flex-direction: row;
+    gap: 0.7em;
+  }
+
+  .item__text p,
+  h3 {
+    margin-left: 0 !important;
+    width: auto;
+  }
+
+  .pribeh-cont-cta {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .aktuality-cont {
+    display: flex;
+    gap: 10em;
+  }
+
+  .aktuality-cont__item {
+    position: relative;
+    width: 50%;
+  }
+
+  .aktuality-nadpis {
+    font-weight: 600;
+  }
+
+  .aktuality-cont__item::before {
+    content: url(../img/kalendar21.svg);
+    position: absolute;
+    right: 110%;
+    top: 1em;
+  }
+
+  .aktuality-cont__item:nth-of-type(2)::before {
+    content: url(../img/kalendar8.svg);
+  }
+
+  .section-karty {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .section-kontakt {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    gap: 50px;
+  }
+
+  .section-kontakt__item {
+    min-width: 200px;
+    margin: 0;
+  }
+
+  .section-kontakt__item > div {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .footer__item--line {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+  }
+
+  .footer__line--text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__line--utext {
+    border: var(--modra) 0.5px solid;
+    align-self: center;
+    height: 20px;
+    margin: 1em;
+  }
+
+  .underfooter {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+  }
+
+  .underfooter__item {
+    width: 100%;
+  }
+}
